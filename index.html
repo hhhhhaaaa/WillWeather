@@ -2,15 +2,30 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>WillWeather</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="public/index.css" rel="stylesheet">
 </head>
 
 <body>
-
-
+    <nav class="navbar"></nav>
+    <div class="app">
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for city..." />
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">Detroit, MI</div>
+                <div class="date">Thursday 4 March 2021</div>
+            </section>
+            <div class="current">
+                <div class="temp">43<span>°F</span></div>
+                <div class="weather">Sunny</div>
+                <div class="hi-low">19°F / 43°F</div>
+            </div>
+        </main>
+    </div>
     <script src="public/index.js"></script>
 </body>
 
