@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @media (min-width: 480px) {
 
 }
@@ -5,3 +11,41 @@
 @media (min-width: 600px) {
     
 }
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid gray;
+    font-size: 20px;
+    font-weight: 360;
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: inline-flexbox;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+}
+
+.navbar {
+    justify-content: left;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #253540;
+    color: white;
+    font-weight: bold;
+}
+
