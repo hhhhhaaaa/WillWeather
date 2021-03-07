@@ -5,6 +5,8 @@
   <title>WillWeather</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link href="public/index.css" rel="stylesheet">
 </head>
@@ -14,12 +16,20 @@
   <div class="app">
     <header>
       <input type="text" autocomplete="off" class="search-box" placeholder="Search for city..." />
-      <button class="search-btn"></button>
+      <button class="search-btn">Search</button>
     </header>
     <main>
       <section class="location">
         <div class="city">Detroit, MI</div>
         <div class="date">Thursday 4 March 2021</div>
+        <div class="map-container">
+          <div id='map' style='width: 400px; height: 300px;'></div>
+          <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js">
+          </script>
+          <link rel="stylesheet"
+            href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+            type="text/css">
+        </div>
       </section>
       <div class="current">
         <div class="temp">43<span>°F</span></div>
@@ -104,8 +114,11 @@
 
     </main>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="public/index.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+  integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="./public/index.js"></script>
 
 </html>

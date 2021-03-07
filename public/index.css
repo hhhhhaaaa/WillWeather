@@ -69,3 +69,8 @@ textarea{
     padding: 10px;
     width: 55vw;
   }
+
+.map {
+height: 400px;
+width: 100%;
+}
