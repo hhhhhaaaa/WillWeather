@@ -46,31 +46,28 @@ main {
     justify-content: left;
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: #253540;
-    color: white;
+    background-color: whitesmoke;
+    color: darkblue;
     font-weight: bold;
 }
 
-.container {
-float: center; 
-width: 100%;
-height: 100%;
-}
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
 
-textarea{
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    font-weight: bold;
-    border-left: 1px solid black;
-    border-top: 1px solid darkgray;
-    border-bottom: 1px solid darkgray;
-    padding: 10px;
-    width: 55vw;
+.svg-icon {
+    width: 3em;
+    height: 3em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #4691f6;
+  }
+  
+  .svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
   }
 
-.map {
-height: 400px;
-width: 100%;
-}
