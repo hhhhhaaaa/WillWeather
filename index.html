@@ -12,128 +12,159 @@
 </head>
 
 <body>
-            <p>Date:</p>
-        <div id="day-four">  
-            <p>Temperature:</p>
-            <p>Wind Speed:</p>
-        <div id="day-three">  
-            <p>Date:</p>
-            <p>UV Index:</p>
-        </div>
-            <p>Temperature:</p>
-            <p>Wind Speed:</p>
-        </div>
-        <div id="day-two">  
-            <p>UV Index:</p>
-            <p>UV Index:</p>
-            <p>Temperature:</p>
-            <p>Date:</p>
-            <p>Wind Speed:</p>
-            <p>Temperature:</p>
-        </div>
-        <div id="day-one">  
-            <p>Date:</p>
-            <p>Wind Speed:</p>
-    <div id="five-day">5-day Forcast:</div>
-            <p>UV Index:</p>
-      <div class="container">
-            <p>Temperature:</p>
-        </div>   
+  <div id="five-day">5-day Forcast:</div>
+  <div id="day-one">
+    <p>Date:</p>
+    <p>UV Index:</p>
+    <p>Temperature:</p>
+    <p>Wind Speed:</p>
+  </div>
+  <div id="day-two">
+    <p>Date:</p>
+    <p>UV Index:</p>
+    <p>Temperature:</p>
+    <p>Date:</p>
+  </div>
+  <div id="day-three">
+    <p>Date:</p>
+    <p>UV Index:</p>
+    <p>Temperature:</p>
+    <p>Wind Speed:</p>
+  </div>
+  <div id="day-four">
+    <p>Temperature:</p>
+    <p>Date:</p>
+    <p>Wind Speed:</p>
+    <p>Temperature:</p>
+  </div>
+  <div id="day-five">
+    <p>Temperature:</p>
+    <p>Date:</p>
+    <p>Wind Speed:</p>
+    <p>UV Index:</p>
+  </div>
   <nav class="navbar text-center font-extrabold">WillWeather</nav>
   <div class="app bg-gradient-to-br bg-scroll from-blue-900 to-green-500">
     <header>
       <input type="text" autocomplete="off" class="search-box" placeholder="Search for city..." />
       <button class="search-btn"><svg class="svg-icon" viewBox="0 0 20 20">
-        <path d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z"></path>
-    </svg></button>
+          <path
+            d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z">
+          </path>
+        </svg></button>
     </header>
     <main>
-      <section class="container bg-white p-8 bg-opacity-60 rounded-3xl flex space-x-12 justify-items-end shadow-md flex-col float-right">
-          <div class="current">
+      <section
+        class="container bg-white p-8 bg-opacity-60 rounded-3xl flex space-x-12 justify-items-end shadow-md flex-col float-right">
+        <div class="current">
           <div class="temp font-extrabold text-6xl">43<span>°F</span></div>
           <div class="city text-black mt-2 text-sm">Detroit, MI</div>
           <div class="date font-bold">Thursday 4 March 2021</div>
           <div class="hi-low">19°F / 43°F</div>
           <div class="weather">Sunny</div>
-       </section>
+      </section>
       <div class="map-container float-left">
-          <div id='map' style='width: 400px; height: 300px;'></div>
-          <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js">
-          </script>
-          <link rel="stylesheet"
-            href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
-            type="text/css">
-        </div>
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js">
+        </script>
+        <link rel="stylesheet"
+          href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+          type="text/css">
+      </div>
       </section>
       <div class="container">
-        
+
         <div id="1">
           <div id="time1"> </div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          <textarea rows="2"
+            class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+          <button id="save"
+            class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
         </div>
 
-        <div id="2" >
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+        <div id="2">
+          <textarea rows="2"
+            class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+          <button id="save"
+            class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
         </div>
-        
+
         <div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
-        <div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
-        </div>
+          <textarea rows="2"
+            class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+          <button id="save"
+            class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          <div>
+            <textarea rows="2"
+              class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+            <button id="save"
+              class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          </div>
 
-        <div id="5">
-          <div id="time5"> </div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
-        </div>
+          <div id="5">
+            <div id="time5"> </div>
+            <textarea rows="2"
+              class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+            <button id="save"
+              class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          </div>
 
-        <div id="6">
-          <div id="time6"> </div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
-        </div>
+          <div id="6">
+            <div id="time6"> </div>
+            <textarea rows="2"
+              class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+            <button id="save"
+              class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          </div>
 
-        <div id="7">
-          <div id="time7"> </div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
-        </div>
+          <div id="7">
+            <div id="time7"> </div>
+            <textarea rows="2"
+              class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+            <button id="save"
+              class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          </div>
 
-        <div id="8">
-          <div id="time8"> </div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
-        </div>
+          <div id="8">
+            <div id="time8"> </div>
+            <textarea rows="2"
+              class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+            <button id="save"
+              class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          </div>
 
-        <div id="9">
-          <div id="time9"> </div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
-        </div>
+          <div id="9">
+            <div id="time9"> </div>
+            <textarea rows="2"
+              class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+            <button id="save"
+              class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          </div>
 
-        <div id="10">
-          <div id="time10"> </div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
-        </div>
+          <div id="10">
+            <div id="time10"> </div>
+            <textarea rows="2"
+              class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+            <button id="save"
+              class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          </div>
 
-        <div id="11">
-          <div id="time11"> </div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
-        </div>
+          <div id="11">
+            <div id="time11"> </div>
+            <textarea rows="2"
+              class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+            <button id="save"
+              class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          </div>
 
-        <div id="12">
-          <div id="time12"> </div>
-          <textarea rows="2" class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-          <button id="save" class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          <div id="12">
+            <div id="time12"> </div>
+            <textarea rows="2"
+              class="bg-gray-400 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+            <button id="save"
+              class="bg-green-900 hover:bg-green-400 border-dashed border-blue-400 border-opacity-75 rounded-sm text-gray-400">Save</button>
+          </div>
         </div>
-      </div>
 
     </main>
   </div>
