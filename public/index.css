@@ -1,17 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 2;
+    padding: 10px;
     box-sizing: border-box;
 }
-
 @media (min-width: 480px) {
-
 }
-
 @media (min-width: 600px) {
-    
 }
-
 header {
     display: flex;
     justify-content: left;
@@ -19,7 +14,6 @@ header {
     padding: 50px 15px 15px;
     flex-wrap: wrap;
 }
-
 header input {
     width: 100%;
     max-width: 280px;
@@ -31,8 +25,7 @@ header input {
     font-size: 20px;
     font-weight: 360;
 }
-
-main {
+/*main {
     flex: 1 1 100%;
     padding: 25px 25px 50px;
     display: inline-flexbox;
@@ -40,34 +33,48 @@ main {
     align-items: right;
     text-align: right;
     flex-wrap: wrap;
-}
-
-.navbar {
-    justify-content: left;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: whitesmoke;
-    color: darkblue;
-    font-weight: bold;
-}
+}*/
 
 /* -----
 SVG Icons - svgicons.sparkk.fr
 ----- */
-
 .svg-icon {
     width: 3em;
     height: 3em;
   }
-  
   .svg-icon path,
   .svg-icon polygon,
   .svg-icon rect {
-    fill: #4691f6;
+    fill: #4691F6;
   }
-  
   .svg-icon circle {
-    stroke: #4691f6;
+    stroke: #4691F6;
     stroke-width: 1;
   }
+textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    font-weight: bold;
+    border-left: 1px solid black;
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    padding: 10px;
+    width: 55vw;
+  }
 
+.map {
+height: 400px;
+width: 100%;
+}
+
+textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    width: 75vw;
+  }
