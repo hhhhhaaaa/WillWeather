@@ -6,13 +6,13 @@ WillWeather is a simple weather forecast app, which uses some APIs to fetch 5 da
 
 ## WillWeather in Action 
 
-![WillWeather](public/images/WillWeather-Snap1.PNG)
+![WillWeather](public/Images/WillWeather-Snap1.PNG)
 
-![WillWeather](public/images/WillWeather-Snap2.PNG)
+![WillWeather](public/Images/WillWeather-Snap2.PNG)
 
-![WillWeather](public/images/WillWeather-Snap3.PNG)
+![WillWeather](public/Images/WillWeather-Snap3.PNG)
 
-![WillWeather](public/images/WillWeather-Snap4.PNG)
+![WillWeather](public/Images/WillWeather-Snap4.PNG)
 
 A user should be able to search for their local city to then be provided a interactive map, the current date and temperature. A user will then be guided to the day planner featuring current times and temperatures to plan out their daily tasks and activities all utilizing one simple platform. Users can look ahead in the week with the 5-Day forecast. 
 
