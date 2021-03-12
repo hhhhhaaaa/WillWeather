@@ -2,7 +2,7 @@
 
 ![WillWeather](public/WillWeather.png)
 
-WillWeather is a simple weather forecast app, which uses some APIs to fetch 5 day / 12 hour forecast data from the _______ and to fetch cities/map from ____. The main goal of this app is to assist users as a weather forecaster and day planner to plan out their daily outdoor activities.
+WillWeather is a simple weather forecast app, which uses some APIs to fetch 5 day / 12 hour forecast data from OpenWeather and to fetch cities/map from Mapbox. The main goal of this app is to assist users as a weather forecaster and day planner to plan out their daily outdoor activities.
 
 ## WillWeather in Action 
 
