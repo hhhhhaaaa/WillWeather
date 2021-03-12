@@ -29,6 +29,7 @@
             <article
                 class="current-Weather flex items-center justify-between px-6 py-8 bg-white p-8 bg-opacity-60 rounded-3xl flex-wrap">
                 <div class="float-left">
+                    <!-- Map, displaying searched location -->
                     <div id='map' style='width: 400px; height: 300px;'></div>
                     <script
                         src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js">
@@ -37,17 +38,18 @@
                         href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
                         type="text/css">
                 </div>
+                <!-- Searched location, as well as current weather -->
                 <div class="current text-blue-700">
-                  <div class="temp font-extrabold text-6xl">43<span>°F</span></div>
-                  <div class="city mt-2 text-sm">Detroit, MI</div>
-                  <div class="date font-bold">Thursday 4 March 2021</div>
-                  <div class="hi-low">19°F / 43°F</div>
-                  <div class="weather">Sunny</div>
-              </div>
+                    <div class="temp font-extrabold text-6xl">43<span>°F</span></div>
+                    <div class="city mt-2 text-sm">Detroit, MI</div>
+                    <div class="date font-bold">Thursday 4 March 2021</div>
+                    <div class="hi-low">19°F / 43°F</div>
+                    <div class="weather">Sunny</div>
+                </div>
             </article>
-          </main>
-          <br>
-            <!--Day Planner-->
+        </main>
+        <br>
+        <!--Day Planner-->
         <h3 class="text-2xl text-left font-bold text-white bg-blue-700">Let's Plan Our Day</h3>
         <br>
         <article>
@@ -136,6 +138,7 @@
                 <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
             </div>
         </article>
+        <!-- Five Day Forecast -->
         <article class="text-white bg-blue-700">
             <h3 class="text-2xl text-left font-bold text-white">5 Day Forecast</h3>
             <card class="flex flex-wrap sm:-mx-3 px-3 space-x-4">
@@ -173,6 +176,7 @@
         </article>
     </div>
 </body>
+<!-- jQuery, Moment.js, and our App's scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
     integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="

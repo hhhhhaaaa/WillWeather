@@ -1,68 +1,69 @@
 * {
-    margin: 2;
-    padding: 10px;
-    box-sizing: border-box;
+  margin: 2;
+  padding: 10px;
+  box-sizing: border-box;
 }
-@media (min-width: 480px) {
-}
-@media (min-width: 600px) {
-}
+
 header {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding: 50px 15px 15px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 50px 15px 15px;
+  flex-wrap: wrap;
 }
+
 header input {
-    width: 100%;
-    max-width: 280px;
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    border-radius: 16px 0px 16px 0px;
-    border-bottom: 3px solid gray;
-    font-size: 20px;
-    font-weight: 360;
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid gray;
+  font-size: 20px;
+  font-weight: 360;
 }
 
 /* -----
 SVG Icons - svgicons.sparkk.fr
 ----- */
 .svg-icon {
-    width: 3em;
-    height: 3em;
-  }
-  .svg-icon path,
-  .svg-icon polygon,
-  .svg-icon rect {
-    fill: #4691F6;
-  }
-  .svg-icon circle {
-    stroke: #4691F6;
-    stroke-width: 1;
-  }
-textarea{
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    font-weight: bold;
-    border-left: 1px solid black;
-    border-top: 1px solid darkgray;
-    border-bottom: 1px solid darkgray;
-    padding: 10px;
-    width: 75vw;
+  width: 3em;
+  height: 3em;
+}
 
-  }
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691F6;
+}
+
+.svg-icon circle {
+  stroke: #4691F6;
+  stroke-width: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  font-weight: bold;
+  border-left: 1px solid black;
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  padding: 10px;
+  width: 75vw;
+
+}
 
 .map {
-height: 400px;
-width: 100%;
+  height: 400px;
+  width: 100%;
 }
 
 .fivedayForecastFourteen {
-  margin: -12px !important;
+  margin: -16px !important;
 }
 
 .ninjaInfoCard {
