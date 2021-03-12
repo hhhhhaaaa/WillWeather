@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>WillWeather</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="public/index.css" rel="stylesheet">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="public/index.css" rel="stylesheet">
 </head>
+
 <body class="whole bg-gradient-to-br bg-scroll from-blue-900 to-green-500">
     <nav class="navbar justify-between text-5xl text-white">
-      <h1>WillWeather</h1>
-      <img src="public/WillWeather.png" alt="logo"/>
+        <h1>WillWeather</h1>
+        <img src="public/WillWeather.png" alt="logo" />
     </nav>
     <div class="app">
         <header>
@@ -27,13 +29,13 @@
             <article
                 class="current-Weather flex items-center justify-between px-6 py-8 bg-white p-8 bg-opacity-60 rounded-3xl flex-wrap">
                 <div class="float-left">
-                <div id='map' style='width: 400px; height: 300px;'></div>
-                <script
-                    src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js">
-                </script>
-                <link rel="stylesheet"
-                    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
-                    type="text/css">
+                    <div id='map' style='width: 400px; height: 300px;'></div>
+                    <script
+                        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js">
+                    </script>
+                    <link rel="stylesheet"
+                        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+                        type="text/css">
                 </div>
                 <div class="current text-blue-700">
                   <div class="temp font-extrabold text-6xl">43<span>°F</span></div>
@@ -58,130 +60,134 @@
                         <button
                         class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>  
                 </div>
-                <div class="flex items-center" id="2">
-                    <div id="time2" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather2" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="3">
-                    <div id="time3" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather3" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="4">
-                    <div id="time4" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather4" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="5">
-                    <div id="time5" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather5" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="6">
-                    <div id="time6" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather6" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="7">
-                    <div id="time7" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather7" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="8">
-                    <div id="time8" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather8" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="9">
-                    <div id="time9" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather9" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="10">
-                    <div id="time10" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather10" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="11">
-                    <div id="time11" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather11" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
-                <div class="flex items-center" id="12">
-                    <div id="time12" class="w-1/6 text-lg text-white font-bold"></div>
-                    <div id="weather12" class="w-1/6 text-lg text-white"></div>
-                    <textarea rows="2"
-                        class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
-                    <button
-                        class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
-                </div>
             </article>
-            <article class="text-white bg-blue-700">
-                <h3 class="fiveday text-2xl text-left font-bold text-white">5 Day Forecast</h3>
-                <card class="weathercards flex flex-wrap sm:-mx-3 px-3 space-x-4">
-                <div class="w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
-                    <ul>Temperature:</ul>
-                    <ul>Date:</ul>
-                    <ul>UV Index:</ul>
-                    <ul>Wind Speed:</ul>
-                </div>
-                <div class="w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
-                    <ul>Temperature:</ul>
-                    <ul>Date:</ul>
-                    <ul>UV Index:</ul>
-                    <ul>Wind Speed:</ul>
-                </div>
-                <div class="w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
-                    <ul>Temperature:</ul>
-                    <ul>Date:</ul>
-                    <ul>UV Index:</ul>
-                    <ul>Wind Speed:</ul>
-                </div>
-                <div class="w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
-                    <ul>Temperature:</ul>
-                    <ul>Date:</ul>
-                    <ul>UV Index:</ul>
-                    <ul>Wind Speed:</ul>
-                </div>
-                <div class="w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
-                    <ul>Temperature:</ul>
-                    <ul>Date:</ul>
-                    <ul>UV Index:</ul>
-                    <ul>Wind Speed:</ul>
-                </div>
-              </card>
-            </article>
+        </main>
+        <br>
+        <!--Day Planner-->
+
+        <h3 class="text-2xl text-left font-bold text-white bg-blue-700">Let's Plan Our Day</h3>
+        <br>
+        <article>
+            <div class="flex items-center" id="1">
+                <div id="time1" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather1" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="2">
+                <div id="time2" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather2" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="3">
+                <div id="time3" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather3" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="4">
+                <div id="time4" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather4" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="5">
+                <div id="time5" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather5" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="6">
+                <div id="time6" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather6" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="7">
+                <div id="time7" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather7" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="8">
+                <div id="time8" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather8" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="9">
+                <div id="time9" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather9" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="10">
+                <div id="time10" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather10" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="11">
+                <div id="time11" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather11" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+            <div class="flex items-center" id="12">
+                <div id="time12" class="w-1/6 text-lg text-white font-bold"></div>
+                <div id="weather12" class="w-1/6 text-lg text-white"></div>
+                <textarea rows="2"
+                    class="w-4/6 px-4 flex items-center bg-white bg-opacity-60 hover:bg-green-100 border-double border-blue-400 border-opacity-75 rounded-lg text-green-900"></textarea>
+                <button class="w-1/6 save-btn font-bold text-blue-700 text-sm p-4">CLICK TO SAVE</button>
+            </div>
+        </article>
+        <article class="text-white bg-blue-700">
+            <h3 class="text-2xl text-left font-bold text-white">5 Day Forecast</h3>
+            <card class="flex flex-wrap sm:-mx-3 px-3 space-x-4">
+                <ul class="ninjaInfoCard w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
+                    <li class="futureTemp1 fivedayForecastFourteen">Temperature:</li>
+                    <li class="futureDate1 fivedayForecastFourteen">Date:</li>
+                    <li class="futureUV1 fivedayForecastFourteen">UV Index:</li>
+                    <li class="futureWind1 fivedayForecastFourteen">Wind Speed:</li>
+                </ul>
+                <ul class="w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
+                    <li class="futureTemp2 fivedayForecastFourteen">Temperature:</li>
+                    <li class="futureDate2 fivedayForecastFourteen">Date:</li>
+                    <li class="futureUV2 fivedayForecastFourteen">UV Index:</li>
+                    <li class="futureWind2 fivedayForecastFourteen">Wind Speed:</li>
+                </ul>
+                <ul class="w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
+                    <li class="futureTemp3 fivedayForecastFourteen">Temperature:</li>
+                    <li class="futureDate3 fivedayForecastFourteen">Date:</li>
+                    <li class="futureUV3 fivedayForecastFourteen">UV Index:</li>
+                    <li class="futureWind3 fivedayForecastFourteen">Wind Speed:</li>
+                </ul>
+                <ul class="w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
+                    <li class="futureTemp4 fivedayForecastFourteen">Temperature:</li>
+                    <li class="futureDate4 fivedayForecastFourteen">Date:</li>
+                    <li class="futureUV4 fivedayForecastFourteen">UV Index:</li>
+                    <li class="futureWind4 fivedayForecastFourteen">Wind Speed:</li>
+                </ul>
+                <ul class="w-1/5 sm:my-3 sm:px-3 box-content h-32 w-32 p-4 border-4">
+                    <li class="futureTemp5 fivedayForecastFourteen">Temperature:</li>
+                    <li class="futureDate5 fivedayForecastFourteen">Date:</li>
+                    <li class="futureUV5 fivedayForecastFourteen">UV Index:</li>
+                    <li class="futureWind5 fivedayForecastFourteen">Wind Speed:</li>
+                </ul>
+            </card>
+        </article>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -189,4 +195,5 @@
     integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
     crossorigin="anonymous"></script>
 <script type="text/javascript" src="./public/index.js"></script>
+
 </html>

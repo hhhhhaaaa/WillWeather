@@ -25,15 +25,6 @@ header input {
     font-size: 20px;
     font-weight: 360;
 }
-/*main {
-    flex: 1 1 100%;
-    padding: 25px 25px 50px;
-    display: inline-flexbox;
-    flex-direction: column;
-    align-items: right;
-    text-align: right;
-    flex-wrap: wrap;
-}*/
 
 /* -----
 SVG Icons - svgicons.sparkk.fr
@@ -61,7 +52,8 @@ textarea{
     border-top: 1px solid darkgray;
     border-bottom: 1px solid darkgray;
     padding: 10px;
-    width: 55vw;
+    width: 75vw;
+
   }
 
 .map {
@@ -69,12 +61,10 @@ height: 400px;
 width: 100%;
 }
 
-textarea{
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    font-weight: bold;
-    padding: 10px;
-    width: 75vw;
-  }
+.fivedayForecastFourteen {
+  margin: -12px !important;
+}
+
+.ninjaInfoCard {
+  margin-left: 17px;
+}
